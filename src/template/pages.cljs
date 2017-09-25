@@ -96,7 +96,7 @@
       [:li "Server public key"]
       [:li "Client symmetric key"]
       [:li "Handshake over"]]]
-    <2-> [:img<400x> "/imgs/Sequence.svg"]]])
+    <2-> [:img<400x> "imgs/Sequence.svg"]]])
 (defslide certificate
   [:block<Certificate>
    [:cols
@@ -108,26 +108,26 @@
       [:li "At root level, approved by a Certification Authority"]
       [:li "Verified by a chain of trust"]]]
     <0->
-    [:div.flex-cc [:img<450x300> "/imgs/certificate-fields.png"]]]])
+    [:div.flex-cc [:img<450x300> "imgs/certificate-fields.png"]]]])
 (defslide chain-of-trust
   [:block<Chain_of_trust>
    [:div "List of intermediate issuer certificate"]
    [:div "Issuer X verifies Issuer X-1"]
    [:div "Issuer X refers Issuer X+1"]
-   [:img<x300> "/imgs/chain-of-trust.svg"]])
+   [:img<x300> "imgs/chain-of-trust.svg"]])
 (defslide type-certificate
   [:block<3_main_types_of_Certificate>
    [:rows
     [:cols
      <-> [:ul
           [:li "Self-Signed (Allows *)"]
-          [:img<x100> "/imgs/self-signed.jpg"]]
+          [:img<x100> "imgs/self-signed.jpg"]]
      <-> [:ul
           [:li "CA w/ Domain Verification (Allows *)"]
-          [:img<x100> "/imgs/DV.jpg"]]]
+          [:img<x100> "imgs/DV.jpg"]]]
     <-> [:ul
          [:li "CA w/ Extended Verification (Does not allow *)"]
-         [:img<x100> "/imgs/EV.jpg"]]]])
+         [:img<x100> "imgs/EV.jpg"]]]])
 
 ;; How to get it
 (defslide how-to-get
@@ -165,11 +165,11 @@
      [:li "Sponsored by Mozilla, Chrome, OVH, ..."]
      <->
      [:li "Easy to set up"]
-     [:img<x150> "/imgs/certbot.svg"]
+     [:img<x150> "imgs/certbot.svg"]
      <->
      [:li "Free!"]]
     <0->
-    [:img<300x> "/imgs/lets-encrypt.png"]]])
+    [:img<300x> "imgs/lets-encrypt.png"]]])
 
 ;; Demo
 (defslide demos
