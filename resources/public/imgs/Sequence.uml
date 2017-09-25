@@ -1,0 +1,18 @@
+@startuml
+
+skinparam handwritten true
+skinparam monochrome true
+skinparam backgroundcolor transparent
+skinparam shadowing false
+
+Client -> Server : Hello Client
+
+Client <-- Server : Hello Server
+Client <-- Server : Public Key/Certificate
+
+Client -> Server : Encrypted Symmetric Key
+Client -> Server : Client Finish
+
+Client <-- Server : Server Finish
+
+@enduml
