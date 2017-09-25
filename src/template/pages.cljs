@@ -32,6 +32,7 @@
     [:ul
      <-> [:li "1995: SSL 1.0 (Netscape)"]
      <-> [:li "1999: TLS 1.0"]
+     <-> [:li "2014: Security Breach - HeartBleed"]
      <-> [:li "Currently: TLS 1.2"]
      <-> [:li "Future: TLS 1.3"]]]])
 (defslide keypoints-tls
@@ -43,38 +44,38 @@
     <-> [:li "Authenticity"]]])
 
 ;; How does it work?
-(defslide how-does ;; TODO
+(defslide how-does
   [:div.flex-cc
    [:h1 "How does it work?"]])
 (defslide encryption-type
   [[:h3 "Encryption types"]
    [:cols
-    <0->
+    <->
     [:block<Symmetric_Encryption>
-     <->
-     [:div "+ Fast"]
-     <->
-     [:div "- Key sent in clear"]
-     <->
-     [:div "- 1 user = 1 key"]
+     [:div "1 key to encrypt/decrypt"]
      [:div "Ex:"]
-     <->
      [:ul
       [:li "Caesar cipher"]
-      [:li "AES-256"]]]
-    <0->
+      [:li "AES-256"]]
+     <3->
+     [:div "+ Fast"]
+     <4->
+     [:div "- Key sent in clear"]
+     <5->
+     [:div "~ 1 user = 1 key"]]
+    <->
     [:block<Asymmetric_Encryption>
+     [:div "Public/Private key"]
+     [:div "Ex:"]
+     [:ul
+      [:li "RSA"]
+      [:li "SHA-256"]]
+     <->
+     [:div "- Slow"]
      <->
      [:div "+ Public/Private key"]
      <->
-     [:div "+ Only 1 key pair"]
-     <->
-     [:div "- Slow"]
-     [:div "Ex:"]
-     <->
-     [:ul
-      [:li "RSA"]
-      [:li "SHA-256"]]]]])
+     [:div "~ Only 1 key pair"]]]])
 (defslide tls-handshake
   [:block<TLS_Handshake>
    [:cols
@@ -93,16 +94,22 @@
     <2-> [:img<400x> "/imgs/Sequence.svg"]]])
 (defslide certificate
   [:block<Certificate>
-   [:div "Represents online identity for the website"]
-   [:div "At root level, approved by a Certification Authority"]
-   [:div "Verified by a chain of trust"]])
+   [:cols
+    [[:div "Represents online identity for the website"]
+     <->
+     [:div "Contains URL, validity, public key, certificate signature, ..."]
+     <->
+     [:ul
+      [:li "At root level, approved by a Certification Authority"]
+      [:li "Verified by a chain of trust"]]]
+    <0->
+    [:div.flex-cc [:img<450x300> "/imgs/certificate-fields.png"]]]])
 (defslide chain-of-trust
   [:block<Chain_of_trust>
-   [:ul
-    [:li "List of intermediate issuer certificate"]
-    ]
-   [:img<x300> "/imgs/chain-of-trust.svg"]]
-  )
+   [:div "List of intermediate issuer certificate"]
+   [:div "Issuer X verifies Issuer X-1"]
+   [:div "Issuer X refers Issuer X+1"]
+   [:img<x300> "/imgs/chain-of-trust.svg"]])
 (defslide type-certificate
   [:block<3_main_types_of_Certificate>
    [:rows
