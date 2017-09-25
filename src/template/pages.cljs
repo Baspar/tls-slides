@@ -25,6 +25,11 @@
 (defslide what-is-it
   [:div.flex-cc
    [:h1 "What is TLS?"]])
+(defslide what-is-https
+  [:block<What_is_HTTPS?>
+   [:div "Stands for HTTP Secure"]
+   [:div "Means HTTP using TLS"]
+   [:div "Port 443"]])
 (defslide history-tls
   [:div
    [:h3 "TLS (Transport Layer Security)"]
@@ -184,15 +189,16 @@
    [:h1 "Thanks!"]
    [:div
     [:span "Slides available at "]
-    [:link "https://baspar.github.io/"]]
+    [:link "https://baspar.github.io/tls-slides"]]
    [:div
     [:span "Notes available at "]
-    [:link "https://baspar.github.io/NOTES.md"]]])
+    [:link "https://baspar.github.io/tls-slides/NOTES.md"]]])
 
 ;; Groups
 (def groups [["Introduction" [["Welcome" welcome]
                               ["Summary" summary]]]
              ["What is it?" [["What is TLS?" what-is-it]
+                             ["What is HTTPS?" what-is-https]
                              ["History TLS" history-tls]
                              ["Keypoints" keypoints-tls]]]
              ["How does it work?" [["How does it work?" how-does]
