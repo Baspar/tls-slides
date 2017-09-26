@@ -1,1 +1,0 @@
-{"version":3,"file":"\/home\/baspar\/PaloIT\/tls-slides\/resources\/public\/js\/compiled\/out\/template\/state.js","sources":["state.cljs?rel=1506396183577"],"lineCount":9,"mappings":";AAAA;;AAEA,GAAA,OAASA;AAAT;AAAA,AAAA,AAASA,2BAAU,yBAAA,2CAAA,mEAAA,mFAAA,IAAA,IAAA,lOAACC","names":["template.state\/app-state","cljs.core\/atom"]}
