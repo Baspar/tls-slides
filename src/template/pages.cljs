@@ -197,7 +197,7 @@
     [:link "https://baspar.github.io/tls-slides"]]
    [:div
     [:span "Notes available at "]
-    [:link "https://baspar.github.io/tls-slides/NOTES.md"]]])
+    [:link "https://github.com/Baspar/tls-slides/blob/gh-pages/NOTES.md"]]])
 
 ;; Groups
 (def groups [["Introduction" [["Welcome" welcome]
