@@ -5,7 +5,7 @@
 ;; Introduction
 (defslide welcome
   [:div.flex-cc
-   [:h1 "SSL-TLS: How to guide"]])
+   [:h1 "SSL/TLS: How-to guide"]])
 (defslide summary
   [:block<What_we_are_going_to_discuss>
    [:ul
@@ -24,12 +24,16 @@
 ;; What is it ?
 (defslide what-is-it
   [:div.flex-cc
-   [:h1 "What is TLS?"]])
+   [:h1 "What is TLS/SSL & HTTPS?"]])
 (defslide what-is-https
   [:block<What_is_HTTPS?>
-   [:div "Stands for HTTP Secure"]
-   [:div "Means HTTP using TLS"]
-   [:div "Port 443"]])
+   [:ul
+    <->
+    [:li "Stands for HTTP Secure"]
+    <->
+    [:li "Means HTTP using TLS"]
+    <->
+    [:li "Port 443"]]])
 (defslide history-tls
   [:div
    [:h3 "TLS (Transport Layer Security)"]
@@ -44,9 +48,10 @@
   [:div
    [:h3 "3 keypoints of TLS:"]
    [:ul
-    <-> [:li "Confidentiality (Encryption)"]
-    <-> [:li "Integrity"]
-    <-> [:li "Authenticity"]]])
+    <->
+    [:li "Confidentiality (Encryption)"]
+    [:li "Integrity"]
+    [:li "Authenticity"]]])
 
 ;; How does it work?
 (defslide how-does
@@ -183,7 +188,7 @@
 ;; Conclusion
 (defslide conclusion
   [:div.flex-cc
-   [:h1 "To SSL or not to?"]])
+   [:h1 "To TLS or not to?"]])
 (defslide thanks
   [:div.flex-cc
    [:h1 "Thanks!"]
@@ -211,5 +216,5 @@
                         ["2 different ways" different-ways]
                         ["Let's Encrypt" lets-encrypt]]]
              ["Demos" [["Demos" demos]]]
-             ["Conclusion" [["To SSL or not to?" conclusion]
+             ["Conclusion" [["To TLS or not to?" conclusion]
                             ["Thanks!" thanks]]]])
